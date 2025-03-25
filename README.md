@@ -1,3 +1,5 @@
+# Fortigate Firewall Configration Steps
+
 First of all, we need to get to know our network. For this  , we see the Subnets in the Network and their information from the Interfaces section.
  
 ![image](https://github.com/user-attachments/assets/e1fde004-3b95-4b75-9635-d253cd30148e)
