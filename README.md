@@ -20,17 +20,17 @@ To do this, we go to Policy & Objects > Adresses. We click on the Create New but
  
 ![image](https://github.com/user-attachments/assets/a2b1eed4-b877-42e7-a23e-6d1ae118387f)
 
-![image](https://github.com/user-attachments/assets/0aa5d427-9eb5-4139-b97f-2c0bc3a4d432)
+![image](https://github.com/user-attachments/assets/cb4368aa-188c-4dcf-8d3e-7850a784d8d6)
 
-![image](https://github.com/user-attachments/assets/deffa711-de81-4f86-a084-fef108c47c74)
+![image](https://github.com/user-attachments/assets/d34ae23c-e14a-4bf0-9176-e38e0dae7d89)
 
 In this way, we identify our devices using IP addresses.
 
- ![image](https://github.com/user-attachments/assets/8e3eb6b8-c51d-430d-93bd-bb305b20ac1e)
+![image](https://github.com/user-attachments/assets/6985d494-9e3f-410e-908d-f3f3c5f786f1)
 
 After all our Interface, Subnet and Device definitions are finished, we are ready to write Policy.
 
-![image](https://github.com/user-attachments/assets/d0f3d0e5-d121-40a1-84ba-dfa9d555590f)
+![image](https://github.com/user-attachments/assets/5bc32cf2-57b4-48b4-8ef3-b5c781d85edd)
 
 - Incoming Interface -> Source Subnet
 - Outgoing Interface -> Destination Subnet
