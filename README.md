@@ -2,14 +2,20 @@ First of all, we need to get to know our network. For this  , we see the Subnets
  
 ![image](https://github.com/user-attachments/assets/e1fde004-3b95-4b75-9635-d253cd30148e)
 
+© Fortinet
+
 Then we see our Devices in the Network and their information from Dashboard>Status>DHCP.
 
 ![image](https://github.com/user-attachments/assets/0a9dc6a4-909f-446f-a42f-fa6d51f93db1)
 
+© Fortinet
+
 After learning the Subnet IPs and  the IPs of the Devices and  drawing the Network Topology, we can proceed to the next step required to write a Policy.
 
 ![image](https://github.com/user-attachments/assets/d766f70f-0f61-4409-83e2-ef82fb942f85)
- 
+
+© Fortinet
+
 Before we start writing a Policy in the Firewall, we must define the Device or Address related to that Policy. If we have not already defined the data we will need when writing the Policy, the Policy cannot be fully created.
 
 Now, in order for us to write Policy, these Subnet IPs and Device IPs must be registered in the Address book. We go to the Policy & Objects > Address section, we look at them, if they are not registered, we should not save them. 
@@ -20,17 +26,27 @@ To do this, we go to Policy & Objects > Adresses. We click on the Create New but
  
 ![image](https://github.com/user-attachments/assets/a2b1eed4-b877-42e7-a23e-6d1ae118387f)
 
+© Fortinet
+
 ![image](https://github.com/user-attachments/assets/cb4368aa-188c-4dcf-8d3e-7850a784d8d6)
 
+© Fortinet
+
 ![image](https://github.com/user-attachments/assets/d34ae23c-e14a-4bf0-9176-e38e0dae7d89)
+
+© Fortinet
 
 In this way, we identify our devices using IP addresses.
 
 ![image](https://github.com/user-attachments/assets/6985d494-9e3f-410e-908d-f3f3c5f786f1)
 
+© Fortinet
+
 After all our Interface, Subnet and Device definitions are finished, we are ready to write Policy.
 
 ![image](https://github.com/user-attachments/assets/5bc32cf2-57b4-48b4-8ef3-b5c781d85edd)
+
+© Fortinet
 
 - Incoming Interface -> Source Subnet
 - Outgoing Interface -> Destination Subnet
@@ -44,6 +60,8 @@ In the Services section, we say Create new and create it as we want.
 
 ![image](https://github.com/user-attachments/assets/0e995bb1-d918-4afc-98a6-a5ff2e40f211)
 
+© Fortinet
+
 - Action : ACCEPT
 
 - NAT -> No need to open NAT if this Policy is not going to go to the Internet.
@@ -51,19 +69,33 @@ In the Services section, we say Create new and create it as we want.
  
  ![image](https://github.com/user-attachments/assets/0ab8cea4-203d-4d44-8d46-7d8e66ff03a6)
 
+© Fortinet
+
  ![image](https://github.com/user-attachments/assets/ceb24fb9-9e7f-4ecf-9b95-5a375d3cbd07)
+
+© Fortinet
 
 ![image](https://github.com/user-attachments/assets/2f3961a1-6cfc-4e3b-8df4-d4b746b0f99e)
 
- ![image](https://github.com/user-attachments/assets/e7e6f9d8-54a9-4787-ba47-6b4d45493b6c)
+© Fortinet
 
- ![image](https://github.com/user-attachments/assets/31a5e65e-f7c8-40ac-8fca-cca1feb57b68)
+![image](https://github.com/user-attachments/assets/e7e6f9d8-54a9-4787-ba47-6b4d45493b6c)
+
+© Fortinet
+
+![image](https://github.com/user-attachments/assets/31a5e65e-f7c8-40ac-8fca-cca1feb57b68)
+
+© Fortinet
 
 ![image](https://github.com/user-attachments/assets/a1b052e9-31f5-4eda-8832-5b6809e2dbc9)
+
+© Fortinet
 
 After setting this Module or Filters, we need to set the SSL Inspection  option in the Policy.
 
 ![image](https://github.com/user-attachments/assets/15247b20-bfa6-4b65-8957-7d59938033ff)
+
+© Fortinet
 
 When creating a Policy in the FortiGate firewall, SSL Inspection options are used to analyze whether the traffic is encrypted (HTTPS, TLS, SSL) and to examine its content when necessary. 
 
@@ -92,6 +124,8 @@ Using SSL Inspection, FortiGate can detect malicious activity, threats within en
 - It provides flexibility, but  if not configured correctly, security vulnerabilities can occur.
 
 ![image](https://github.com/user-attachments/assets/30c9f543-c81f-41a7-9316-9726e4e23cdb)
+
+© Fortinet
 
 The next step is to set which log record will be kept. There  are two options here: Security Event and All Sessions. If we choose Security Event, if there is a security-related situation while this Policy is running, it will only keep its Logs. The All Sessions option will keep all Logs.
 
@@ -132,3 +166,8 @@ Note: Not all FortiGate models support disk logging. It can be used on models wi
   - When central log management is required.  
   - When the physical capacity of the device is not enough (there is no disk or memory is limited).  
   - To collect the logs of multiple FortiGate devices in one place.
+
+
+### Note
+
+This content has been prepared to explain the basic configuration steps of Fortigate devices for educational purposes. All screenshots and software are the property of Fortinet Inc. This page is not intended for commercial use.
