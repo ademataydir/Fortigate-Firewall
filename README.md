@@ -37,7 +37,15 @@ After all our Interface, Subnet and Device definitions are finished, we are read
 - Source -> Devices in the Source 
 - Destination -> Devices in the Destination Subnet
 - Schedule -> We set the time when this Policy will run
-- Service -> Services that are required for this Policy to work
+- - Service -> Services that are required for this Policy to work
+  - If the service we need is not on the list
+  - For this:
+In the Services section, we say Create new and create it as we want.
+
+![image](https://github.com/user-attachments/assets/0e995bb1-d918-4afc-98a6-a5ff2e40f211)
+
+- Action : ACCEPT
+
 - NAT -> No need to open NAT if this Policy is not going to go to the Internet.
 - Security Profiles -> If we want to use the Modules or Filters here, we activate it. By default, there is 1 defined, but we can create an optional one by going to the relevant tab in the Security Profiles section on  the left and clicking the Create New  button.
  
